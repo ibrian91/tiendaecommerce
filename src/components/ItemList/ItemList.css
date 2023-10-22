@@ -1,0 +1,12 @@
+.image-list {
+  /* display: flex; /* Hace que los elementos sean flexibles (en línea) */
+  /*flex-direction: row;
+  justify-content: center;
+  margin-right: 50px;
+  gap: 20px; Espacio entre las imágenes */
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none; /* Quitar el estilo de lista */
+}
