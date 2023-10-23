@@ -1,10 +1,12 @@
 .item-container {
   border: 2px solid #ccc;
-  width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   text-align: center;
   display: flex;
   flex-direction: column; /* Alinear contenido en columna */
+  align-items: center; /* Alinear contenido en el centro horizontalmente */
+  padding: 10px; /* Añadir espacio entre elementos */
+  margin: 10px; /* Añadir espacio entre elementos */
 }
 
 .avatar {
@@ -12,7 +14,6 @@
 }
 
 .avatar img {
-  display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;

@@ -5,8 +5,24 @@
   margin-right: 50px;
   gap: 20px; Espacio entre las imágenes */
 
-  display: flex;
+  padding-top: 2%;
   justify-content: center;
   gap: 20px;
+  row-gap: 10px;
   list-style: none; /* Quitar el estilo de lista */
+  margin-top: 10px;
+}
+
+/* Añade estos estilos al final de tu archivo CSS */
+.item-group {
+  display: flex;
+  gap: 20px; /* Agrega un espacio horizontal entre las imágenes en un grupo */
+  justify-content: center; /* Centra horizontalmente los elementos en un grupo */
+}
+
+.item {
+  /* Establece los estilos de la imagen según tus preferencias */
+  width: 100px; /* Ajusta el ancho según tus necesidades */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover;
 }

@@ -1,24 +1,32 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link, NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <header
-      className="d-flex justify-content-between align-items-center px-4 pb-1"
-      style={{ borderBottom: "1px solid #000" }}
-    >
-      <div className="ml-4">
-        <h2>Tienda Muebles Online</h2>
-      </div>
-      <nav className="d-flex align-items-center">
-        <ul className="list-inline mb-0 mr-4">
-          <li className="list-inline-item">Sofas</li>
-          <li className="list-inline-item">Mesas</li>
-          <li className="list-inline-item">Sillas</li>
-          <li className="list-inline-item">Camas</li>
-          <li className="list-inline-item">Escritorios</li>
+    <header>
+      <Link to="/" className="navbar-brand">
+        <img src={"./img/logo.png"} alt="Logo Tienda Mueble Online" />
+      </Link>
+
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="#">Sillas</Link>
+          </li>
+          <li>
+            <Link to="#">Mesas</Link>
+          </li>
+          <li>
+            <Link to="#">Escritorios</Link>
+          </li>
         </ul>
       </nav>
+
       <CartWidget />
     </header>
   );
