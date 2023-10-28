@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { getUnProducto } from "../asyncmock";
+
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import { getUnProducto } from "../asyncmock";
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState(null);
@@ -9,7 +10,11 @@ const ItemDetailContainer = () => {
   const { idItem } = useParams();
 
   useEffect(() => {
-    getUnProducto(idItem).then((respuesta) => setProducto(respuesta));
+    getUnProducto(idItem)
+      .then((respuesta) => {
+        setProducto(respuesta);
+      })
+      .catch((error) => console.error("Error obteniendo el producto: ", error));
   }, [idItem]);
 
   return (

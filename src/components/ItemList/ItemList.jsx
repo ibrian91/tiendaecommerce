@@ -10,10 +10,10 @@ const ItemList = ({ productos }) => {
   }
 
   return (
-    <div className="image-list ">
-      {groupedProducts.map((group, index) => (
-        <div key={index} className="item-group">
-          {group.map((item) => (
+    <div className="image-list">
+      {groupedProducts.map((itemGroup) => (
+        <div key={itemGroup[0].id}>
+          {itemGroup.map((item) => (
             <Item key={item.id} {...item} />
           ))}
         </div>

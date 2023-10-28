@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <header>
       <Link to="/" className="navbar-brand">
-        <img src={"./img/logo.png"} alt="Logo Tienda Mueble Online" />
+        <img src={"../img/logo.png"} alt="Logo Tienda Mueble Online" />
       </Link>
 
       <nav>
@@ -16,13 +16,13 @@ const NavBar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="#">Sillas</Link>
+            <NavLink to="categoria/1">Sillas</NavLink>
           </li>
           <li>
-            <Link to="#">Mesas</Link>
+            <NavLink to="categoria/2">Mesas</NavLink>
           </li>
           <li>
-            <Link to="#">Escritorios</Link>
+            <NavLink to="categoria/3">Escritorios</NavLink>
           </li>
         </ul>
       </nav>

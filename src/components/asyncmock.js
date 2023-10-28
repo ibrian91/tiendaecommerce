@@ -1,12 +1,74 @@
 const productos = [
-  { id: 1, nombre: "Yerba", precio: 500, img: "./img/yerba.jpg", idCat: "1" },
-  { id: 2, nombre: "Fideos", precio: 200, img: "./img/fideos.jpg", idCat: "1" },
-  { id: 3, nombre: "Arroz", precio: 300, img: "./img/arroz.jpg", idCat: "1" },
-  { id: 4, nombre: "Aceite", precio: 900, img: "./img/aceite.jpg", idCat: "2" },
-  { id: 5, nombre: "Yerba", precio: 500, img: "./img/yerba.jpg", idCat: "2" },
-  { id: 6, nombre: "Fideos", precio: 200, img: "./img/fideos.jpg", idCat: "2" },
-  { id: 7, nombre: "Arroz", precio: 300, img: "./img/arroz.jpg", idCat: "3" },
-  { id: 8, nombre: "Aceite", precio: 900, img: "./img/aceite.jpg", idCat: "3" },
+  {
+    id: "1",
+    nombre: "Silla Nordica",
+    precio: 500,
+    img: "../img/silla1.png",
+    idCat: "1",
+  },
+  {
+    id: "2",
+    nombre: "Silla Paradiso",
+    precio: 200,
+    img: "../img/sillados.jpg",
+    idCat: "1",
+  },
+  {
+    id: "3",
+    nombre: "Silla Lenga Fueguina",
+    precio: 300,
+    img: "../img/silla3.jpg",
+    idCat: "1",
+  },
+  {
+    id: "4",
+    nombre: "Mesa Cromada Vidrio",
+    precio: 900,
+    img: "../img/mesa1.jpg",
+    idCat: "2",
+  },
+  {
+    id: "5",
+    nombre: "Mesa Comedor Oslo",
+    precio: 900,
+    img: "../img/mesa2.jpg",
+    idCat: "2",
+  },
+  {
+    id: "6",
+    nombre: "Mesa Tolix Madera",
+    precio: 900,
+    img: "../img/mesa3.jpg",
+    idCat: "2",
+  },
+  {
+    id: "7",
+    nombre: "Mesa Eames",
+    precio: 900,
+    img: "../img/mesa4.jpg",
+    idCat: "2",
+  },
+  {
+    id: "8",
+    nombre: "Mesa Industrial",
+    precio: 500,
+    img: "../img/mesa5.jpg",
+    idCat: "2",
+  },
+  {
+    id: "9",
+    nombre: "Escritorio Nordico",
+    precio: 300,
+    img: "../img/escritorio1.jpg",
+    idCat: "3",
+  },
+  {
+    id: "10",
+    nombre: "Escritorio Recto",
+    precio: 900,
+    img: "../img/escritorio2.jpg",
+    idCat: "3",
+  },
 ];
 
 export const getProductos = () => {
@@ -22,14 +84,14 @@ export const getUnProducto = (id) => {
     setTimeout(() => {
       const producto = productos.find((item) => item.id === id);
       resolve(producto);
-    }, 500);
+    }, 100);
   });
 };
 
 export const getProductosPorCategoria = (idCategoria) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const productosCategoria = misProductos.filter(
+      const productosCategoria = productos.filter(
         (item) => item.idCat === idCategoria
       );
       resolve(productosCategoria);
