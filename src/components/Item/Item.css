@@ -1,6 +1,6 @@
 .item-container {
   border: 2px solid #ccc;
-  max-width: 200px;
+  max-width: 150px;
   text-align: center;
   display: flex;
   flex-direction: column; /* Alinear contenido en columna */
@@ -8,6 +8,8 @@
   padding: 10px; /* Añadir espacio entre elementos */
   margin: 10px; /* Añadir espacio entre elementos */
 }
+
+
 
 .avatar {
   flex: 1; /* Hace que la imagen ocupe todo el espacio disponible verticalmente */

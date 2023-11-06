@@ -14,7 +14,9 @@ const ItemList = ({ productos }) => {
       {groupedProducts.map((itemGroup) => (
         <div key={itemGroup[0].id}>
           {itemGroup.map((item) => (
+            
             <Item key={item.id} {...item} />
+            
           ))}
         </div>
       ))}

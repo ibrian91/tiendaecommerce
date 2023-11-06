@@ -11,6 +11,8 @@
   row-gap: 10px;
   list-style: none; /* Quitar el estilo de lista */
   margin-top: 10px;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 /* Añade estos estilos al final de tu archivo CSS */
@@ -22,7 +24,7 @@
 
 .item {
   /* Establece los estilos de la imagen según tus preferencias */
-  width: 100px; /* Ajusta el ancho según tus necesidades */
-  height: 100px; /* Ajusta la altura según tus necesidades */
+  width: 20px; /* Ajusta el ancho según tus necesidades */
+  height: 20px; /* Ajusta la altura según tus necesidades */
   object-fit: cover;
 }
