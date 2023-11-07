@@ -1,31 +1,23 @@
 .item-container {
   border: 2px solid #ccc;
-  max-width: 150px;
+  width: 6cm;
   text-align: center;
-  display: flex;
-  flex-direction: column; /* Alinear contenido en columna */
-  align-items: center; /* Alinear contenido en el centro horizontalmente */
-  padding: 10px; /* Añadir espacio entre elementos */
-  margin: 10px; /* Añadir espacio entre elementos */
+  display: inline-block;
+  margin: 10px 1%;
+  vertical-align: top;
 }
-
-
-
+ 
 .avatar {
-  flex: 1; /* Hace que la imagen ocupe todo el espacio disponible verticalmente */
-}
-
-.avatar img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.button-container {
+  width: 6cm;
+  height: 200px;
+  overflow: hidden;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-
-.button-container button {
-  margin: 10px;
+ 
+.avatar img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
 }

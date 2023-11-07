@@ -37,7 +37,7 @@ const manejadorCantidad = (cantidad) => {
       <h2>Nombre: {nombre}</h2>
       <h3>Precio: {precio}</h3>
       <h3>ID: {id}</h3>
-      <img className="img" src={img} alt={nombre} />
+      <img  src={img} alt={nombre} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum,
         autem doloremque, aperiam in minus neque est dolores ipsa esse mollitia

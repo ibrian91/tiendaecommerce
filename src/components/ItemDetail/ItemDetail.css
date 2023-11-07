@@ -1,14 +1,13 @@
 .contenedorItem {
   text-align: center;
   border: 1px solid black;
-  margin: 10rem;
-  padding: 5px;
+  margin: 4rem; 
 }
 
-.img {
+/* .img {
   max-width: 20%;
   max-height: 20%;
   object-fit: contain;
   display: block;
   margin: 0 auto;
-}
+} */
