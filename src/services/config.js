@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAKusZgrrK6z6IGZZKgsjCTw3yiKHDAIjM",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "tienda--ecommerce.firebaseapp.com",
   projectId: "tienda--ecommerce",
   storageBucket: "tienda--ecommerce.appspot.com",
@@ -13,3 +13,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
+
+//AIzaSyAKusZgrrK6z6IGZZKgsjCTw3yiKHDAIjM

@@ -61,33 +61,18 @@ const Checkout = () => {
       })
     )
       .then(() => {
-        // guardamos la orden en la BD
         addDoc(collection(db, "ordenes"), orden)
           .then((docref) => {
             setOrdenId(docref.id);
             vaciarCarrito();
           })
           .catch((error) => {
-            console.log("Error al crear la orden", error);
             setError("Se produjo un error al crear la orden");
           });
       })
       .catch((error) => {
-        console.log("No se pudo actualizar el stock", error);
         setError("No se pudo actualizar el stock");
       });
-
-    // guardar la orden en la base de datos
-    // con add doc agrego un documento a la coleccion
-    // addDoc(collection(db, "ordenes"), orden)
-    //   .then((docref) => {
-    //     setOrdenId(docref.id);
-    //     vaciarCarrito();
-    //   })
-    //   .catch((error) => {
-    //     console.log("Error al crear la orden", error);
-    //     setError("Se produjo un error al crear la orden");
-    //   });
   };
 
   return (
