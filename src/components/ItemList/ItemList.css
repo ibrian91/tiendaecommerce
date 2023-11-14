@@ -13,6 +13,14 @@
   margin-top: 10px;
   padding-right: 2%;
   padding-left: 2%;
+  opacity: 0; /* Inicialmente establece la opacidad en 0 para que los elementos sean invisibles */
+  transform: scale(0.5); /* Inicialmente establece la escala en 0.5 para que los elementos sean más pequeños */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Aplica una transición de 0.5 segundos con un efecto de ease-in-out */
+}
+
+.image-list.loaded {
+  opacity: 1; /* Cuando la clase "loaded" está presente, establece la opacidad en 1 para hacer los elementos visibles */
+  transform: scale(1); /* Cuando la clase "loaded" está presente, establece la escala en 1 para hacer los elementos de tamaño normal */
 }
 
 /* Añade estos estilos al final de tu archivo CSS */

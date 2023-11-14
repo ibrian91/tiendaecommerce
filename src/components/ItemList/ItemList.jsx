@@ -9,14 +9,20 @@ const ItemList = ({ productos }) => {
     groupedProducts.push(productos.slice(i, i + 5));
   }
 
+  // Agregar la clase "loaded" cuando los productos se cargan
+  const handleLoaded = () => {
+    const list = document.querySelector(".image-list");
+    if (list) {
+      list.classList.add("loaded");
+    }
+  };
+
   return (
-    <div className="image-list">
+    <div className="image-list" onLoad={handleLoaded}>
       {groupedProducts.map((itemGroup) => (
-        <div key={itemGroup[0].id}>
+        <div key={itemGroup[0].id} className="item-group">
           {itemGroup.map((item) => (
-            
             <Item key={item.id} {...item} />
-            
           ))}
         </div>
       ))}
